@@ -1,0 +1,413 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100vw;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2C3E50;
+    align-items: center;
+    padding: 0 100px;
+    position: fixed;
+    z-index: 5;
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none
+}
+
+button {
+    display: none;
+    color: white;
+    background-color: #2C3E50;
+    border: none;
+}
+
+.hero {
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    background-color: #1ABC90;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.hero P {
+    font-size: 20px;
+}
+
+.p_pic {
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 0px;
+
+
+}
+
+#portfolio {
+    padding: 30px 0px;
+
+
+}
+
+.star {
+    position: relative;
+}
+
+.star::before {
+    content: " ";
+    display: block;
+    width: 115px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: -67px;
+
+}
+
+.star::after {
+    content: " ";
+    display: block;
+    width: 115px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    right: -180px;
+}
+
+#portfolio .star::after,
+#portfolio .star::before,
+#contact_me .star::before,
+#contact_me .star::after {
+    background-color: #2C3E50;
+}
+
+.container {
+
+    width: 100vw;
+    height: max-content;
+    margin: 30px auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+
+}
+
+.card {
+    width: 300px;
+    height: 200px;
+    background-color: #2C3E50;
+    border-radius: 5px;
+    position: relative;
+}
+
+.circle {
+    height: 180px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: #2C3E50;
+    position: relative;
+
+
+}
+
+
+.container .card .circle_in_card {
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 50%;
+
+
+}
+
+.container .card .circle_in_card .img_in_card,
+.container .card .circle_in_card .img_in_card_b {
+    height: 180px;
+    width: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.container .card .circle_in_card .img_in_card_b {
+    height: 145px;
+    width: 145px;
+}
+
+.title_sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #2C3E50;
+    gap: 30px;
+    margin-top: 30px;
+    position: relative;
+    width: max-content;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    top: 30px;
+
+}
+
+#about {
+    width: 100vw;
+    height: max-content;
+    background-color: #1ABC90;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 40px;
+
+}
+
+
+.about_title {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+
+
+}
+
+.about_con {
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    margin-top: 30px;
+
+}
+
+#about .about_con p {
+    font-size: 25px;
+    width: 400px;
+    padding: 40px;
+}
+
+.butt {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1ABC90;
+    border: 2px solid white;
+    color: white;
+    margin: auto;
+    font-size: 20px;
+
+}
+
+.butt p {
+    margin-left: 10px;
+
+}
+
+#contact_me {
+    margin-top: 30px;
+
+}
+
+#contact_me .star {
+    margin-bottom: 30px;
+}
+
+form {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inp {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 400px;
+    margin-bottom: 30px;
+}
+
+label {
+    color: gray;
+}
+
+.lab {
+    margin-top: 30px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+.lab button {
+    margin-top: -40px;
+}
+
+
+
+input,
+textarea {
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid silver;
+}
+
+
+
+
+#s_butt {
+    width: 90px;
+    height: 50px;
+    background-color: #1ABC90;
+    border: white;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    padding-left: 28px;
+
+}
+
+#s_butt p {
+    font-size: 15px;
+}
+
+
+.fo {
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    align-items: center;
+    background-color: #2C3E50;
+    color: white;
+    flex-wrap: wrap;
+    padding: 60px 0px;
+
+
+}
+
+.fo_card {
+    width: 300px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+.aa {
+    text-decoration: none;
+    color: white;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #2C3E50;
+    border: 1px solid white;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 5px;
+
+
+}
+
+#fac {
+
+    padding-left: 3px;
+
+}
+
+#a_f {
+    margin-right: 10px;
+}
+
+.fo h2 {
+    margin-bottom: 30px;
+
+}
+
+#hh {
+    margin-bottom: 50px;
+}
+
+#boot_a {
+    color: #1ABC90;
+}
+
+@media screen and (max-width:850px) {
+    nav {
+        padding: 0 40px;
+        gap: 20px;
+    }
+
+    nav button {
+        display: block;
+    }
+
+    ul li {
+        display: none;
+    }
+
+
+    .about_con {
+        flex-wrap: wrap;
+    }
+
+    .fo {
+        height: max-content;
+
+    }
+
+    .lab,
+    .inp {
+        width: 250px;
+    }
+}
