@@ -383,7 +383,7 @@ textarea {
 }
 
 .container .card .circle_in_card:hover {
-    background-color: silver;
+    background-color: grey;
 }
 
 @media screen and (max-width:850px) {
