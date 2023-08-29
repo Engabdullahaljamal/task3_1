@@ -383,7 +383,11 @@ textarea {
 }
 
 .container .card .circle_in_card:hover {
-    background-color: grey;
+    background-color: steelblue;
+}
+
+nav a:hover {
+    color: #1ABC90;
 }
 
 @media screen and (max-width:850px) {
