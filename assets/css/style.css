@@ -382,6 +382,10 @@ textarea {
     color: #1ABC90;
 }
 
+.container .card .circle_in_card:hover {
+    background-color: silver;
+}
+
 @media screen and (max-width:850px) {
     nav {
         padding: 0 40px;
